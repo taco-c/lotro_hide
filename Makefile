@@ -1,7 +1,7 @@
 PREFIX = /usr/local
 
 lotro_hide:
-	gcc -lX11 -lXi -lXfixes lotro_hide.c -o lotro_hide
+	gcc lotro_hide.c -lX11 -lXi -lXfixes -o lotro_hide
 
 clean:
 	rm -f lotro_hide
